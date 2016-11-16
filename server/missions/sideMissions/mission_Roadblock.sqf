@@ -101,7 +101,7 @@ _successExec =
 	  [_item, _lastPos] call _drop_item;
 	};
 
-	_cashamountrandomizer = [50,100,150];
+	_cashamountrandomizer = [5000,5000,5000];
 	_cashpilerandomizer = [2,4];
 		
 	_cash = "cmoney";
