@@ -24,6 +24,11 @@ forEach
 	["A3W_customKeys_playerMenu", [41]], // 41 = Tilde (above Tab)
 	["A3W_customKeys_playerNames", [199,219,220]], // 199 = Home, 219 = LWin, 220 = RWin
 	["A3W_customKeys_earPlugs", [207]] // 207 = End
+	["A3W_customKeys_forceEject", [211]], // 211 = Del
+	["A3W_customKeys_1000m", [59]], // 2 = 1
+	["A3W_customKeys_2000m", [60]], // 3 = 2
+	["A3W_customKeys_3000m", [61]], // 4 = 3
+	["A3W_customKeys_4000m" [62]], // 5 = 4
 ];
 
 _voiceKeys = [];
