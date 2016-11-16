@@ -54,41 +54,8 @@ switch (true) do
 		};
 	};
 	
-		// 1000m - 1 Key
-	case (_key in A3W_customKeys_1000m):
-	{
-			setViewDistance 1000; setObjectViewDistance 900; setTerrainGrid 3.125;
-			["Visão ajustada a 1000 metros.", 5] call mf_notify_client;
-	};
-
-		// 2000m - 2 Key
-	case (_key in A3W_customKeys_2000m):
-	{
-			setViewDistance 2000; setObjectViewDistance 1750; setTerrainGrid 3.125;
-			["Visão ajustada a 2000 metros.", 5] call mf_notify_client;
-	};
-
-		// 3000m - 3 Key
-	case (_key in A3W_customKeys_3000m):
-	{
-			setViewDistance 3000; setObjectViewDistance 2500; setTerrainGrid 3.125;
-			["Visão ajustada a 3000 metros.", 5] call mf_notify_client;
-	};
-
-		// 4000m - 4 Key
-	case (_key in A3W_customKeys_4000m):
-	{
-			setViewDistance 4000; setObjectViewDistance 3000; setTerrainGrid 3.125;
-			["Visão ajustada a 4000 metros.", 5] call mf_notify_client;
-	};	
-	// Emergency Eject - Del Key
-	case (_key in A3W_customKeys_forceEject):
-	{	
-		[-9, false, true, ""] execVM "client\actions\forceEject.sqf";
-	};
-	
 	// Holster - unholster weapon (H key)
-	case (_key in A3W_customKeys_unholsterWeapon):
+	case (_key == 35):
 	{
 		if (vehicle player == player && currentWeapon player != "") then
 		{
@@ -117,7 +84,7 @@ if (!_handled && _key in actionKeys "GetOver") then
 	if (_veh == player) exitWith
 	{
 		// allow opening parachute only above 2.5m
-		if ((getPos player) select 2 > 15) then
+		if ((getPos player) select 2 > 2.5) then
 		{
 			true call A3W_fnc_openParachute;
 			_handled = true;
@@ -145,11 +112,11 @@ if (!_handled && _key in actionKeys "GetOut") then
 	{
 		if (_ctrl && {_veh isKindOf 'Air' && !(_veh isKindOf 'ParachuteBase')}) then
 		{
-			/*[] spawn
+			[] spawn
 			{
 				if !(["Are you sure you want to eject?", "Confirm", true, true] call BIS_fnc_guiMessage) exitWith {};
 				[[], fn_emergencyEject] execFSM "call.fsm";
-			};*/
+			};
 		};
 	};
 };
