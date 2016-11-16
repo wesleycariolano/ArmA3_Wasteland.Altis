@@ -100,8 +100,6 @@ if (hasInterface || isServer) then
 	[] execVM "addons\outlw_magrepack\MagRepack_init.sqf";
 	[] execVM "addons\lsd_nvg\init.sqf";
 	[] execVM "addons\stickyCharges\init.sqf";
-	if (isNil "drn_DynamicWeather_MainThread") then { drn_DynamicWeather_MainThread = [] execVM "addons\scripts\DynamicWeatherEffects.sqf" };
-};
 	[] execVM "addons\statusBar\statusbar.sqf";           // Status Bar
 	[] execVM "addons\APOC_Airdrop_Assistance\init.sqf";  // AIRDROP
 	[] execVM "addons\scripts\intro.sqf";                 //INTRO
@@ -109,6 +107,11 @@ if (hasInterface || isServer) then
 	[] execVM "addons\HvT\HvT.sqf";                       // High Value Target
     [] execVM "addons\scripts\HvD.sqf";                   // High Value Drugrunner
 	[] execVM "addons\ToxicGasGrenades\initGrenades.sqf"; // Toxic Gas Grenades
+	[] execVM "addons\timedrestart\timed_restart.sqf";    // Tempo de Restat
+	[] execVM "addons\ScarCode\sRestartWarnings.sqf";     // Tempo de Restat 2
+	if (isNil "drn_DynamicWeather_MainThread") then { drn_DynamicWeather_MainThread = [] execVM "addons\scripts\DynamicWeatherEffects.sqf" };
+};
+	
 	
 // Remove line drawings from map
 (createTrigger ["EmptyDetector", [0,0,0], false]) setTriggerStatements
