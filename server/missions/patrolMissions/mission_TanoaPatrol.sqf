@@ -146,7 +146,7 @@ _successExec =
 		_cash = "Land_Money_F" createVehicle markerPos _marker;
 		_cash setPos ((markerPos _marker) vectorAdd ([[2 + random 2,0,0], random 360] call BIS_fnc_rotateVector2D));
 		_cash setDir random 360;
-		_cash setVariable["cmoney",1500,true];
+		_cash setVariable["cmoney",40000,true];
 		_cash setVariable["owner","world",true];
 	};
 
