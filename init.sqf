@@ -108,6 +108,7 @@ if (hasInterface || isServer) then
 	[] execVM "addons\laptop\init.sqf";                   // Addon for hack laptop mission
 	[] execVM "addons\HvT\HvT.sqf";                       // High Value Target
     [] execVM "addons\scripts\HvD.sqf";                   // High Value Drugrunner
+	[] execVM "addons\ToxicGasGrenades\initGrenades.sqf"; // Toxic Gas Grenades
 	
 // Remove line drawings from map
 (createTrigger ["EmptyDetector", [0,0,0], false]) setTriggerStatements
