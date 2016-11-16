@@ -969,7 +969,7 @@ planesArray = compileFinal str
 
 	["V-44 X Blackfish (Infantry)", "B_T_VTOL_01_infantry_F", 50000, "vehicle"],
 	["V-44 X Blackfish (Gunship)", "B_T_VTOL_01_armed_F", 600000, "vehicle"],
-	["Y-32 Xi'an", "O_T_VTOL_02_infantry_F", 70000, "vehicle"],
+	["Y-32 Xi'an", "O_T_VTOL_02_infantry_F", 700000, "vehicle"],
 
 	["MQ4A Greyhawk Missile UAV", "B_UAV_02_F", 80000, "vehicle"],
 	["MQ4A Greyhawk Bomber UAV", "B_UAV_02_CAS_F", 70000, "vehicle"], // Bomber UAVs are a lot harder to use, hence why they are cheaper than Missile ones
@@ -1277,10 +1277,10 @@ customPlayerItems = compileFinal str
 [
 	["Water Bottle", "water", localize "STR_WL_ShopDescriptions_Water", "client\icons\waterbottle.paa", 30, 15],
 	["Canned Food", "cannedfood", localize "STR_WL_ShopDescriptions_CanFood", "client\icons\cannedfood.paa", 30, 15],
-	["LSD", "lsd", localize "STR_WL_ShopDescriptions_LSD", "client\icons\lsd.paa", 5000, 2500],
- 	["Marijuana", "marijuana", localize "STR_WL_ShopDescriptions_Marijuana", "client\icons\marijuana.paa", 5000, 2500],
- 	["Cocaine", "cocaine", localize "STR_WL_ShopDescriptions_Cocaine", "client\icons\cocaine.paa", 5000, 2500],
- 	["Heroin", "heroin", localize "STR_WL_ShopDescriptions_Heroin", "client\icons\heroin.paa", 5000, 2500],
+	["LSD", "lsd", localize "STR_WL_ShopDescriptions_LSD", "client\icons\lsd.paa", 5000, 7500],
+ 	["Marijuana", "marijuana", localize "STR_WL_ShopDescriptions_Marijuana", "client\icons\marijuana.paa", 5000, 4000],
+ 	["Cocaine", "cocaine", localize "STR_WL_ShopDescriptions_Cocaine", "client\icons\cocaine.paa", 5000, 10000],
+ 	["Heroin", "heroin", localize "STR_WL_ShopDescriptions_Heroin", "client\icons\heroin.paa", 5000, 10000],
 	["Repair Kit", "repairkit", localize "STR_WL_ShopDescriptions_RepairKit", "client\icons\briefcase.paa", 500, 250],
 	["Jerry Can (Full)", "jerrycanfull", localize "STR_WL_ShopDescriptions_fuelFull", "client\icons\jerrycan.paa", 150, 75],
 	["Jerry Can (Empty)", "jerrycanempty", localize "STR_WL_ShopDescriptions_fuelEmpty", "client\icons\jerrycan.paa", 50, 25],
