@@ -9,11 +9,11 @@ waitUntil {!isNil "playerSpawning" && {!playerSpawning}};
 
 for "_i" from 0 to 1 step 0 do 
 {
-	if (player getvariable "cmoney" > 110000) then
+	if (player getvariable "cmoney" > 150000) then
 		{
-			_title  = "<t color='#ff0000' size='1.2' align='center'>High Value Target! </t><br />";
+			_title  = "<t color='#ff0000' size='1.2' align='center'>Alvo de alto valor!! </t><br />";
 			_name = format ["%1<br /> ",name player];     
-			_text = "<t color='#FFFFFF' shadow='1' shadowColor='#000000' align='center'>Someone has spotted you carrying a large sum of money and has marked your location on the map!</t><br />";     
+			_text = "<t color='#FFFFFF' shadow='1' shadowColor='#000000' align='center'>Alguém carregando uma grande quantia foi espotada no mapa, peguem ele!!</t><br />";     
 			hint parsetext (_title +  _name +  _text); 
 			playsound "Topic_Done";
 
@@ -21,10 +21,10 @@ for "_i" from 0 to 1 step 0 do
 			_bountyMarker = createMarker [_markerName, getPos (vehicle player)];
 			_bountyMarker setMarkerShape "ICON";
 			_bounty = [player getVariable ["cmoney", 0]] call fn_numbersText;
-			_bountyMarker setMarkerText (format ["High Value Target: %1 (%2$)", name player, _bounty]);
+			_bountyMarker setMarkerText (format ["Alvo de grande valor: %1 (%2$)", name player, _bounty]);
 			_bountyMarker setMarkerColor "ColorRed";
 			_bountyMarker setMarkerType "mil_dot";
-			sleep 60;
+			sleep 10;
 			deleteMarker _markerName;
 		};
 }; //will run infinitely
