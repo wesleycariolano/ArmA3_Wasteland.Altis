@@ -41,11 +41,11 @@ SideMissions =
 
 MoneyMissions =
 [
-	//["mission_MoneyShipment", 1.3],
-	//["mission_SunkenTreasure", 0.3]
+	["mission_MoneyShipment", 1.3],
+	["mission_SunkenTreasure", 0.3]
 	//["mission_drugsRunners", 0.8],
 	//["mission_Roadblock", 1.2],
-	["mission_Hackers", 0.7]
+	//["mission_Hackers", 0.7]
 ];
 
 hostileairMissions = 
@@ -60,19 +60,19 @@ hostileairMissions =
 
 extraMissions =
 [
-	//["mission_Outpost", 1.2],
-	//["mission_MBT", 1],
-	//["mission_Convoy", 1],
-	//["mission_ConvoyCSATSF", 0.9],
-	//["mission_ConvoyNATOSF", 0.8],
-	["mission_HackLaptop", 1.5],
-	//["mission_MiniConvoy", 0.8]
+	["mission_Outpost", 1.2],
+	["mission_MBT", 1],
+	["mission_Convoy", 1],
+	["mission_ConvoyCSATSF", 0.9],
+	["mission_ConvoyNATOSF", 0.8],
+	//["mission_HackLaptop", 1.5],
+	["mission_MiniConvoy", 0.8]
 	
 ];
 
 PatrolMissions =
 [
-		["mission_TanoaPatrol", 0.5]
+		["mission_TanoaPatrol", 1]
 	
 	
 ];
